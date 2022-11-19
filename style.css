@@ -1,3 +1,19 @@
 body {
     height: 100vh;
+    background-color: rgb(46, 45, 45);
+}
+
+nav {
+    background-color: rgb(56, 54, 54);
+    height: 7vh;
+}
+
+.nav-link {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-link:hover {
+    color: rgb(147, 144, 144);
+    text-decoration: none;
 }
