@@ -1,37 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d316673763.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Website</title>
 </head>
 <body>
-    <nav class="" id="navBar">
-      <h1 id="name">Jack R.</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="nav justify-content-end">
-                      <li class="nav-item">
-                        <a href="" class="nav-link">Projects</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <button class="nav-link btn" id="resume">Download Resume</button>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="fluid-container">
-
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" alt="" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hello, I'm <span>J</span>ack <br> welcome to my website</h1>
+      </div>
     </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur, recusandae at incidunt fuga facere quos magnam officia earum, illo ipsum corrupti nesciunt 
+            dicta, quidem quasi laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, possimus? Ipsa accusamus debitis omnis commodi consequatur officia? Ex iste sapiente nisi 
+            delectus consequatur? Quidem officiis dolor unde eveniet nemo similique!
+            dolorum consequuntur debitis.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                <li><span>App Development</span><br>Designing Web/App interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021 - Current</span><br>Front-End shift supervisor</li>
+                <li><span>200 - 2021</span><br>Cashier</li>
+                <li><span>2016 - 2018</span><br>Fair concessions manager</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br>Deleware Area Career Center - Application Development and Programming</li>
+                <li><span>2024</span><br>Liberty High School</li>
+              </ul>
+            </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-file-code"></i>
+        <h2>Web Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur, recusandae at incidunt fuga facere quos magnam officia earum, illo ipsum corrupti nesciunt 
+          dicta, quidem quasi laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, possimus? Ipsa accusamus debitis omnis commodi consequatur officia? Ex iste sapiente nisi 
+          delectus consequatur? Quidem officiis dolor unde eveniet nemo similique!
+          dolorum consequuntur debitis.</p>
+          <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-regular fa-paste"></i>
+        <h2>Front-End Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur, recusandae at incidunt fuga facere quos magnam officia earum, illo ipsum corrupti nesciunt 
+          dicta, quidem quasi laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, possimus? Ipsa accusamus debitis omnis commodi consequatur officia? Ex iste sapiente nisi 
+          delectus consequatur? Quidem officiis dolor unde eveniet nemo similique!
+          dolorum consequuntur debitis.</p>
+          <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>App Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur, recusandae at incidunt fuga facere quos magnam officia earum, illo ipsum corrupti nesciunt 
+          dicta, quidem quasi laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, possimus? Ipsa accusamus debitis omnis commodi consequatur officia? Ex iste sapiente nisi 
+          delectus consequatur? Quidem officiis dolor unde eveniet nemo similique!
+          dolorum consequuntur debitis.</p>
+          <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Portfolio</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png" alt="">
+        <div class="layer">
+          <h3>25 + 5 Clock</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum 
+            reiciendis molestias minus cumque tempore eos! Pariatur 
+            quas atque non quae sapiente</p>
+          <a href="TwentyFive.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.png" alt="">
+        <div class="layer">
+          <h3>Calculator App</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum 
+            reiciendis molestias minus cumque tempore eos! Pariatur 
+            quas atque non quae sapiente</p>
+          <a href="# "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.png" alt="">
+        <div class="layer">
+          <h3>Random Quote Machine</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum 
+            reiciendis molestias minus cumque tempore eos! Pariatur 
+            quas atque non quae sapiente</p>
+          <a href="# "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
