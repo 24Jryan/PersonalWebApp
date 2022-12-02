@@ -285,3 +285,8 @@ nav ul li a:hover::after {
 .btn:hover {
     background: #ff004f;
 }
+
+#mNav {
+    display: none;
+    background-color: #373636;
+}

@@ -11,3 +11,20 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+
+$(window).resize(function() {
+    if ($(window).width() <= 768) {
+        $("#nav").hide();
+        $("#mobile-nav").show();
+    } else {
+        $("#nav").show();
+        $("#mobile-nav").hide();
+    }
+})
+$("#mobile-nav").click(function() {
+    $("#mNav").slideToggle();
+    $("#mNav").css("display", "flex");
+    $("#mNav").css("flex-direction", "column");
+});
