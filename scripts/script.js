@@ -12,7 +12,15 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-
+$(document).ready(function() {
+    if ($(window).width() <= 768) {
+        $("#nav").hide();
+        $("#mobile-nav").show();
+    } else {
+        $("#nav").show();
+        $("#mobile-nav").hide();
+    }
+});
 
 $(window).resize(function() {
     if ($(window).width() <= 768) {
@@ -23,6 +31,7 @@ $(window).resize(function() {
         $("#mobile-nav").hide();
     }
 })
+
 $("#mobile-nav").click(function() {
     $("#mNav").slideToggle();
     $("#mNav").css("display", "flex");
